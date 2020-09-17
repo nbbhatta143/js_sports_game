@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Game Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>My JS Game</h1>
+      <div id="won"></div>
+      <div id="reset-container">
+        <button id="reset-button">RESET</button><br />
+        NUMBER OF RESETS: <span id="num-resets">0</span>
+      </div>
+      <div class="clear"></div>
+      <div class="left">
+        <h2>Team 1</h2>
+        <div class="goals">
+          SHOTS TAKEN: <span id="teamone-numshots">0</span><br />
+          GOALS: <span id="teamone-numgoals">0</span>
+        </div>
+        <div>
+          <button id="teamone-shoot-button">SHOOT</button>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Team 2</h2>
+        <div class="goals">
+          SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br />
+          GOALS: <span id="teamtwo-numgoals">0</span>
+        </div>
+        <div>
+          <button id="teamtwo-shoot-button">SHOOT</button>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <audio
+        id="audio"
+        src="./assets/audio/Time Bomb Short-SoundBible.com-1562499525.wav"
+      ></audio>
+      <audio
+        id="audio1"
+        src="./assets/audio/Winchester12-RA_The_Sun_God-1722751268.mp3"
+      ></audio>
+    </div>
+    <script src="./assets/javascript/game.js"></script>
+  </body>
+</html>

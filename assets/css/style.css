@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.hide {
+  display: none;
+}
+.left {
+  float: left;
+  padding: 20px;
+}
+.right {
+  float: right;
+  padding: 20px;
+}
+.clear {
+  clear: both;
+}
+#won {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main {
+  min-width: 375px;
+  max-width: 850px;
+  margin: 50px auto;
+  max-height: 200px;
+  min-height: 400px;
+  background-color: floralwhite;
+  border: 1px double burlywood;
+}
+#reset-container,
+h1 {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 1px;
+}
