@@ -21,7 +21,6 @@ body {
 #won {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 #main {
   min-width: 375px;
