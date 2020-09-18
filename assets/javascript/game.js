@@ -74,12 +74,7 @@ resetButton.addEventListener("click", function () {
         "Congrats! Team Two won with " + teamTowGoals + " Goal(s)!";
     } else {
       //alert("Draw!");
-      won.innerHTML =
-        "Draw! team one " +
-        teamOneGoals +
-        " and team two " +
-        teamTowGoals +
-        " Goal!";
+      won.innerHTML = "Draw! both team have " + teamOneGoals + " goal!";
     }
     reset();
   }
