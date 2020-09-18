@@ -70,11 +70,12 @@ resetButton.addEventListener("click", function () {
         "Congrats! Team One won with " + teamOneGoals + " Goal(s)!";
     } else if (teamTowGoals > teamOneGoals) {
       //alert("Congrats! Team Two Won!");
-      won.innerHTML = "Congrats! Team Two with " + teamTowGoals + " Goal(s)!";
+      won.innerHTML =
+        "Congrats! Team Two won with " + teamTowGoals + " Goal(s)!";
     } else {
       //alert("Draw!");
       won.innerHTML =
-        "Draw! with team one " +
+        "Draw! team one " +
         teamOneGoals +
         " and team two " +
         teamTowGoals +
