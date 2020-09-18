@@ -39,7 +39,7 @@ teamOneButton.addEventListener("click", function () {
   }
 });
 
-//increasing team 1 shots taken and goals
+//increasing team 2 shots taken and goals
 let teamTwoShots = 0;
 let teamTowGoals = 0;
 
@@ -60,26 +60,35 @@ teamTwoButton.addEventListener("click", function () {
 let resetCount = 0;
 
 resetButton.addEventListener("click", function () {
-  if (teamOneNumShots.innerHTML === 0 || teamTwoNumShots.innerHTML == 0) {
+  if (
+    Number(teamOneNumShots.innerHTML) === 0 &&
+    Number(teamTwoNumShots.innerHTML) === 0
+  ) {
     //alert("You haven't started the game yet!");
-    won.innerHTML = "You haven't started the game yet!";
+    won.innerHTML = "Game haven't started yet!";
+  } else if (Number(teamOneNumShots.innerHTML) === 0) {
+    won.innerHTML = "Team 1 haven't started the game yet!";
+  } else if (Number(teamTwoNumShots.innerHTML) === 0) {
+    won.innerHTML = "Team 2 haven't started the game yet!";
   } else {
     if (teamOneGoals > teamTowGoals) {
       //alert("Congrats! Team One Won!");
       won.innerHTML =
-        "Congrats! Team One won with " + teamOneGoals + " Goal(s)!";
+        "Team 1 won the game with " + teamOneGoals + " goal(s)! Congrats!";
     } else if (teamTowGoals > teamOneGoals) {
       //alert("Congrats! Team Two Won!");
       won.innerHTML =
-        "Congrats! Team Two won with " + teamTowGoals + " Goal(s)!";
+        "Team 2 won the game with " + teamTowGoals + " goal(s)! Congrats! ";
     } else {
       //alert("Draw!");
-      won.innerHTML = "Draw! both team have " + teamOneGoals + " goal!";
+      won.innerHTML =
+        "It's a Draw! both teams have " + teamOneGoals + "  goal(s)!";
     }
     reset();
   }
 });
 
+//resetting everything to 0 once reset button is clicked
 function reset() {
   resetCount += 1;
   numReset.innerHTML = resetCount;
